@@ -1,0 +1,11 @@
+/home/kira/Documents/csharp/CsharpObjects/Game/bin/Debug/netcoreapp2.1/Game.deps.json
+/home/kira/Documents/csharp/CsharpObjects/Game/bin/Debug/netcoreapp2.1/Game.runtimeconfig.json
+/home/kira/Documents/csharp/CsharpObjects/Game/bin/Debug/netcoreapp2.1/Game.runtimeconfig.dev.json
+/home/kira/Documents/csharp/CsharpObjects/Game/bin/Debug/netcoreapp2.1/Game.dll
+/home/kira/Documents/csharp/CsharpObjects/Game/bin/Debug/netcoreapp2.1/Game.pdb
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.csprojAssemblyReference.cache
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.csproj.CoreCompileInputs.cache
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.AssemblyInfoInputs.cache
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.AssemblyInfo.cs
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.dll
+/home/kira/Documents/csharp/CsharpObjects/Game/obj/Debug/netcoreapp2.1/Game.pdb

@@ -13,7 +13,7 @@ namespace TreehouseDefense
     {
         public OutOfBoundsException()
         {
-                # change
+
         }
         public OutOfBoundsException(string message) : base(message)
         {

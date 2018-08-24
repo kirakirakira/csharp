@@ -7,6 +7,9 @@ namespace TreehouseDefense
             
         }
         public TreehouseDefenseException(string message)
+        {
+            
+        }
     }
 
     class OutOfBoundsException : TreehouseDefenseException

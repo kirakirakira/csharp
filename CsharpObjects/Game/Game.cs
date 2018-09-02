@@ -7,7 +7,7 @@ namespace TreehouseDefense
         public static void Main()
         {
             Map map = new Map(8, 5);
-
+            
             try
             {
                 Path path = new Path(

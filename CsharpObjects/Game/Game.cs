@@ -23,6 +23,28 @@ namespace TreehouseDefense
                     }
                 );
 
+                Invader[] invaders =
+                {
+                    new Invader(path),
+                    new Invader(path),
+                    new Invader(path),
+                    new Invader(path)
+                };
+
+                Tower[] towers = {
+                    new Tower(new MapLocation(1, 3, map)),
+                    new Tower(new MapLocation(3, 3, map)),
+                    new Tower(new MapLocation(5, 3, map))
+                };
+
+                Level level1 = new Level(invaders)
+                {
+                    Towers = towers
+                };
+
+                bool playerWon = level1.Play();
+
+                Console.WriteLine("Player " + (playerWon? "won" : "lost"));
             }
             catch(OutOfBoundsException ex)
             {

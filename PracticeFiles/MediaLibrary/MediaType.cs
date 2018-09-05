@@ -1,3 +1,5 @@
+using System;
+
 namespace Treehouse.MediaLibrary
 {
     class MediaType
@@ -8,7 +10,14 @@ namespace Treehouse.MediaLibrary
 
         public MediaType(string title)
         {
-            Title = title;
+            if(string.IsNullOrEmpty(title))
+            {
+                throw new Exception("A media type must have a title.");
+            }
+            else
+            {
+                Title = title;
+            }
         }
 
         public void Loan()

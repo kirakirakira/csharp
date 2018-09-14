@@ -65,8 +65,15 @@ namespace Treehouse.MediaLibrary
         public MediaType FindItem(string criteria)
         {
             // use a foreach loop to loop through the items array contained within the MediaLibrary class
-
-            // return the item whose 'Title' property contains the provided 'criteria' string parameter value
+            foreach(MediaType item in _items)
+            {
+                // return the item whose 'Title' property contains the provided 'criteria' string parameter value
+                if(item.Title.ToLower().Contains(criteria.ToLower()))
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
     }

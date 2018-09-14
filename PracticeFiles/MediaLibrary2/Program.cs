@@ -28,10 +28,18 @@ namespace Treehouse.MediaLibrary
                 // DetectMediaType(mediaLibrary.GetItemAt(4));
 
                 // Search the media library for an item by calling the 'FindItem()' method.
+                MediaType foundItem = mediaLibrary.FindItem("arabia");
+                if(foundItem != null)
+                {
                     // If an item is found, pass it into a call to the static MediaLibrary 'DisplayItem()' method
+                    Console.WriteLine("Item found: ");
+                    MediaLibrary.DisplayItem(foundItem);
+                }
+                else
+                {
                     // If an item isn't found, write the message 'Item not found!' to the console
-    
-                             
+                    Console.WriteLine("Item not found!");
+                }        
             }
             catch (Exception ex)
             {

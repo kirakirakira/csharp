@@ -19,47 +19,24 @@ namespace Treehouse.MediaLibrary
                 
                 Console.WriteLine("# of items: " + mediaLibrary.NumberOfItems);
                 
-                DetectMediaType(mediaLibrary.GetItemAt(0));
-                DetectMediaType(mediaLibrary.GetItemAt(1));
-                DetectMediaType(mediaLibrary.GetItemAt(2));
-                DetectMediaType(mediaLibrary.GetItemAt(3));
-                DetectMediaType(mediaLibrary.GetItemAt(4));
-                
-                Display(mediaLibrary.GetItemAt(0));
-                Display(mediaLibrary.GetItemAt(1));
-                Display(mediaLibrary.GetItemAt(2));
-                Display(mediaLibrary.GetItemAt(3));
-                Display(mediaLibrary.GetItemAt(4));                                
+                mediaLibrary.DisplayItems();
+
+                // DetectMediaType(mediaLibrary.GetItemAt(0));
+                // DetectMediaType(mediaLibrary.GetItemAt(1));
+                // DetectMediaType(mediaLibrary.GetItemAt(2));
+                // DetectMediaType(mediaLibrary.GetItemAt(3));
+                // DetectMediaType(mediaLibrary.GetItemAt(4));
+
+                // Search the media library for an item by calling the 'FindItem()' method.
+                    // If an item is found, pass it into a call to the static MediaLibrary 'DisplayItem()' method
+                    // If an item isn't found, write the message 'Item not found!' to the console
+    
+                             
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
             }            
-        }
-
-        static void Display(MediaType item) 
-        {
-            if (item == null)
-            {
-                return;
-            }
-            
-            if (item is Album)
-            {
-                Console.WriteLine(((Album)item).DisplayText);
-            }
-            else if (item is Book)
-            {
-                Console.WriteLine(((Book)item).DisplayText);
-            }
-            else if (item is Movie)
-            {
-                Console.WriteLine(((Movie)item).DisplayText);
-            }
-            else
-            {
-                throw new Exception("Unexpected media subtype encountered.");
-            }
         }
         
         static void DetectMediaType(MediaType item) 

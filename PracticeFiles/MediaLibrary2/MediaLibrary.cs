@@ -1,3 +1,5 @@
+using System;
+
 namespace Treehouse.MediaLibrary
 {
     class MediaLibrary
@@ -19,10 +21,53 @@ namespace Treehouse.MediaLibrary
             }
             else
             {
-                System.Console.WriteLine("An element at index " + index + " doesn't exist in the media library.");
+                Console.WriteLine("An element at index " + index + " doesn't exist in the media library.");
                 
                 return null;
             }
         }
+
+        public void DisplayItems()
+        {
+            for(int i = 0; i < _items.Length; i++)
+            {
+                
+                DisplayItem(_items[i]);
+
+            }
+        }
+
+        public static void DisplayItem(MediaType item) 
+        {
+            if (item == null)
+            {
+                return;
+            }
+            
+            if (item is Album)
+            {
+                Console.WriteLine(((Album)item).DisplayText);
+            }
+            else if (item is Book)
+            {
+                Console.WriteLine(((Book)item).DisplayText);
+            }
+            else if (item is Movie)
+            {
+                Console.WriteLine(((Movie)item).DisplayText);
+            }
+            else
+            {
+                throw new Exception("Unexpected media subtype encountered.");
+            }
+        }
+
+        public MediaType FindItem(string criteria)
+        {
+            // use a foreach loop to loop through the items array contained within the MediaLibrary class
+
+            // return the item whose 'Title' property contains the provided 'criteria' string parameter value
+        }
+
     }
 }

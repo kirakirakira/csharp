@@ -1,21 +1,18 @@
 using System;
-using System.Collections.Generic;
 
 namespace Practice
 {
     class Program
     {   
-        public static List<int> sequence = new List<int> { 0, 1, 1 };
-
         public static int FindFibonacciValue(int index)
         {
             if(index == 0)
             {
-                return sequence[0];
+                return 0;
             }
             else if(index == 1)
             {
-                return sequence[1];
+                return 1;
             }
             else
             {

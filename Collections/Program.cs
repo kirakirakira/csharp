@@ -7,21 +7,17 @@ namespace Treehouse
     {
         static void Main()
         {
-            List<Student> students = new List<Student>
+            HashSet<Student> students = new HashSet<Student>
             {
                 new Student() { Name = "Sally", GradeLevel = 3 },
                 new Student() { Name = "Bob", GradeLevel = 3 },
                 new Student() { Name = "Sally", GradeLevel = 2 },
             };
 
-            SchoolRoll schoolRoll = new SchoolRoll();
-            schoolRoll.AddStudents(students);
+            // SchoolRoll schoolRoll = new SchoolRoll();
+            // schoolRoll.AddStudents(students);
 
-            schoolRoll.Students.RemoveAt(0);
-            schoolRoll.Students.Sort();
-
-            schoolRoll.Students.AddRange(students);
-
+            // schoolRoll.AddStudents(students);
             // students.Sort();
 
             // Student newStudent = new Student() { Name = "Joe", GradeLevel = 2 };
@@ -33,7 +29,18 @@ namespace Treehouse
             //     students.Insert(~index, newStudent);
             // }
 
-            foreach(Student student in schoolRoll.Students)
+            Student joe = new Student() { Name = "Joe", GradeLevel = 2 };
+            students.Add(joe);
+
+            Student duplicateJoe = new Student() { Name = "Joe", GradeLevel = 2 };
+            students.Add(duplicateJoe);
+
+            if(students.Contains(joe))
+            {
+                Console.WriteLine("Found him!");
+            }
+
+            foreach(Student student in students)
             {
                 Console.WriteLine($"{student.Name} is in grade {student.GradeLevel}");
             }

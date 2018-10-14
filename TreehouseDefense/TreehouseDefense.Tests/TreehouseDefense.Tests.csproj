@@ -32,7 +32,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NUnitTestClass.cs" />
+    <Compile Include="PointTests.cs" />
+    <Compile Include="MapLocationTests.cs" />
+    <Compile Include="PathTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

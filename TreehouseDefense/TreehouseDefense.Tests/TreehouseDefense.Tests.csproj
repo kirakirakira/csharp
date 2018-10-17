@@ -35,6 +35,8 @@
     <Compile Include="PointTests.cs" />
     <Compile Include="MapLocationTests.cs" />
     <Compile Include="PathTests.cs" />
+    <Compile Include="Tower.cs" />
+    <Compile Include="Mocks\InvaderMock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -44,6 +46,9 @@
       <Project>{213F5965-CF98-4FC7-BDB9-03588E816EE4}</Project>
       <Name>TreehouseDefense</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mocks\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
